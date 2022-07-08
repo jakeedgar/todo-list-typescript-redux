@@ -1,4 +1,5 @@
-import { legacy_createStore as createStore } from 'redux';
+import { legacy_createStore as createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { 
   ActionTypes, 
   ADD_TODO, 
@@ -78,6 +79,6 @@ action: ActionTypes
   }
 }
 
-const store = createStore(todoReducer)
+const store = createStore(todoReducer, applyMiddleware(thunk))
 
 export default store;
