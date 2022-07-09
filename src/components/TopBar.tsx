@@ -4,7 +4,7 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { useDispatch } from 'react-redux';
 import { getTodos } from "../store/actions";
 
-const url: string = "";
+const url: string = "https://raw.githubusercontent.com/jakeedgar/todo-list-typescript-redux/main/src/data/todos.json";
 
 function TopBar() {
   const dispatch = useDispatch();
